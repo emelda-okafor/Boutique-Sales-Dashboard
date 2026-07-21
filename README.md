@@ -1,62 +1,55 @@
-# Boutique Store Sales Dataset
+# Boutique Store Sales Analysis
 
-A synthetic sales dataset for a boutique fashion retailer with operations across five Nigerian cities, covering the full 2025 calendar year. Includes a cleaned transaction-level dataset plus pre-built pivot tables for quick analysis.
+Analysis of a full year of transactional sales data for a boutique fashion retailer operating across five Nigerian cities — built to surface where revenue and profit are actually coming from, and where they're leaking.
 
-## Contents
+## Project Overview
 
-The workbook (`Boutique_Store_Sales_Dataset.xlsx`) contains:
+The dataset covers 300 individual orders placed between January and December 2025, spanning five product categories, five cities, and three payment methods. Beyond the raw transaction log, the workbook includes pre-built pivot summaries so the key breakdowns are ready to explore immediately.
 
-- **Cleaned Data** — 300 individual order records, 18 columns
-- **Pivot summary sheets** — pre-aggregated views by category, city, product, month, and payment method
+## Key Insights
 
-## Cleaned Data — Column Reference
+- **₦11.3M in total sales generated ₦3.7M in profit** — a ~33% margin across the year
+- **Shoes is the top-performing category** (₦3.6M in sales), driven largely by Heels and Sneakers
+- **Enugu outperforms every other city** (₦2.6M), narrowly ahead of Abuja — worth investigating what's driving that gap
+- **December is the strongest month** (₦1.4M), suggesting a seasonal/holiday sales lift worth planning inventory around
+- **Payment methods are evenly split** between Cash, POS, and Transfer — no single channel dominates, which has implications for reconciliation and cash-flow planning
 
-| Column | Description |
+## Recommendations
+
+- **Double down on Shoes** — it's the top-grossing category; consider expanding SKU variety (colors/sizes) for Heels and Sneakers specifically, since they drive the bulk of that category's revenue
+- **Investigate what's working in Enugu** — its outperformance over cities like Lagos and Ibadan may point to a stronger sales team, better local marketing, or product-mix fit worth replicating elsewhere
+- **Plan inventory and staffing around the December peak** — stock up on top sellers ahead of the holiday season rather than reacting to demand in real time
+- **Review discounting strategy** — with a ~33% overall margin, it's worth checking whether heavy discounts on lower-margin items are eating into profit without meaningfully lifting volume
+- **Keep supporting all three payment methods** — since none dominates, cutting one (e.g. to reduce reconciliation overhead) risks alienating a meaningful share of customers
+
+## Dataset Structure
+
+**`Boutique_Store_Sales_Dataset.xlsx`** contains:
+
+| Sheet | Contents |
 |---|---|
-| Order ID | Unique order identifier |
-| Order Date | Date of purchase (Jan – Dec 2025) |
-| Customer Name | Customer's name |
-| Gender | Customer gender |
-| Age | Customer age |
-| City | Store/delivery city (Lagos, Abuja, Enugu, Port Harcourt, Ibadan) |
-| Product Category | Shoes, Dresses, Bags, Trousers, Tops |
-| Product | Specific item (e.g. Heels, Sneakers, Maxi Dress) |
-| Size | Item size |
-| Color | Item color |
-| Quantity | Units purchased |
-| Unit Price | Price per unit (₦) |
-| Discount (%) | Discount applied |
-| Sales | Total sale value after discount (₦) |
-| Cost | Total cost of goods (₦) |
-| Profit | Sales minus Cost (₦) |
-| Payment Method | Cash, POS, or Transfer |
-| Salesperson | Staff member who processed the order |
+| Cleaned Data | 300 orders × 18 columns — the full transaction log |
+| Pivot sheets | Pre-aggregated views by category, city, product, month, and payment method |
 
-## Key Metrics
+**Columns in Cleaned Data:** Order ID, Order Date, Customer Name, Gender, Age, City, Product Category, Product, Size, Color, Quantity, Unit Price, Discount (%), Sales, Cost, Profit, Payment Method, Salesperson.
 
-- **Total Sales:** ₦11,330,700
-- **Total Profit:** ₦3,726,200
-- **Total Orders:** 300
-- **Top Category by Sales:** Shoes (₦3,612,100)
-- **Top City by Sales:** Enugu (₦2,611,900)
-- **Best-selling Product:** Heels (₦1,854,600)
+## Tools & Skills Demonstrated
 
-## Included Pivot Views
+- Data cleaning and structuring
+- Pivot table analysis
+- Sales, profit, and margin analysis
+- Trend analysis across time, geography, and category
+- Excel-based reporting (adaptable to Power BI / Tableau / pandas)
 
-- Sales by Product Category
-- Sales by City
-- Sales by Product
-- Sales by Month
-- Order Count by Payment Method
+## Possible Next Steps
 
-## Use Cases
+- Build an interactive dashboard (Power BI / Tableau) on top of this data
+- Segment customers by age, gender, and city to inform targeted promotions
+- Model discount impact on margin to find the optimal discount range
 
-This dataset is well suited for practicing:
-- Exploratory data analysis (EDA)
-- Sales and profit trend analysis
-- Customer segmentation
-- Dashboard building (Excel, Power BI, Tableau)
-- SQL / pandas querying exercises
+## License
 
+MIT — free to use, adapt, and build on.
 
-
+---
+*Note: this is a synthetic dataset created for portfolio/practice purposes and does not represent a real business.*
